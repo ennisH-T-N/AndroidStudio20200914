@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="30dp"
+        app:srcCompat="@drawable/psf" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:ems="10"
+        android:hint="      Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="50dp"
+        android:background="@drawable/button"
+        android:text="Log in"
+        android:textAlignment="center" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">order</string>
+    <string name="ittle">點餐系統</string>
+    <string name="title">title</string>
+    <string name="點餐系統">點餐系統</string>
+    <string name="type">餐點種類:</string>
+    <string name="od_op_system">點餐、預約系統</string>
+    <string name="od_type">餐點種類:</string>
+</resources>

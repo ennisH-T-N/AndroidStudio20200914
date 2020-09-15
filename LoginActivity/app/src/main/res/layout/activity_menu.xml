@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_background1" />
+
+    <ImageView
+        android:id="@+id/imv1"
+        android:layout_width="175dp"
+        android:layout_height="170dp"
+        android:background="@drawable/image_shape"
+        android:duplicateParentState="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/buger1" />
+
+    <Button
+        android:id="@+id/btn1_plus"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape6"
+        android:gravity="center"
+        android:onClick="Up"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Button
+        android:id="@+id/btn1_subtract"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape6"
+        android:gravity="center"
+        android:onClick="Down"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv1_total"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/tv1_name"
+        android:layout_width="79dp"
+        android:layout_height="45dp"
+        android:alpha="0.8"
+        android:background="@drawable/text_shape"
+        android:text="鮮蔬農夫漢堡"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv1"
+        app:layout_constraintEnd_toEndOf="@+id/imv1"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="@+id/imv1"
+        app:layout_constraintTop_toTopOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <TextView
+        android:id="@+id/tv1_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$135"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv1"
+        app:layout_constraintEnd_toEndOf="@+id/imv1"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="@+id/imv1"
+        app:layout_constraintTop_toTopOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.942" />
+
+    <TextView
+        android:id="@+id/tv1_total"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn1_plus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="今日菜單"
+        android:textColor="#595151"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="177dp"
+        android:layout_height="42dp"
+        android:background="@drawable/text_shape2"
+        android:gravity="center"
+        android:text="人氣推薦"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="177dp"
+        android:layout_height="42dp"
+        android:background="@drawable/text_shape1"
+        android:gravity="center"
+        android:text="三明治系列"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <ImageView
+        android:id="@+id/imv2"
+        android:layout_width="182dp"
+        android:layout_height="149dp"
+        android:background="@drawable/image_shape"
+        android:duplicateParentState="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/tv1_total"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/buger2" />
+
+    <Button
+        android:id="@+id/btn2_subtract"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape6"
+        android:gravity="center"
+        android:onClick="Down"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv2_total"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv2"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/tv2_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$150"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv2"
+        app:layout_constraintEnd_toEndOf="@+id/imv2"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="@+id/imv2"
+        app:layout_constraintTop_toTopOf="@+id/imv2"
+        app:layout_constraintVertical_bias="0.933" />
+
+    <TextView
+        android:id="@+id/tv2_name"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:alpha="0.8"
+        android:background="@drawable/text_shape"
+        android:text="鳳梨照燒雞肉漢堡"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv2"
+        app:layout_constraintEnd_toEndOf="@+id/imv2"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="@+id/imv2"
+        app:layout_constraintTop_toTopOf="@+id/imv2"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <TextView
+        android:id="@+id/tv2_total"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/btn2_plus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv2"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/btn2_plus"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape6"
+        android:gravity="center"
+        android:onClick="Up"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv2"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <ImageView
+        android:id="@+id/imv3"
+        android:layout_width="151dp"
+        android:layout_height="172dp"
+        android:background="@drawable/image_shape"
+        android:duplicateParentState="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.403"
+        app:layout_constraintStart_toEndOf="@+id/imv1"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/sandwich" />
+
+    <TextView
+        android:id="@+id/tv3_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$90"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv3"
+        app:layout_constraintEnd_toEndOf="@+id/imv3"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="@+id/imv3"
+        app:layout_constraintTop_toTopOf="@+id/imv3"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <TextView
+        android:id="@+id/tv3_name"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:alpha="0.8"
+        android:background="@drawable/text_shape"
+        android:text="總匯三明治"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv3"
+        app:layout_constraintEnd_toEndOf="@+id/imv3"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="@+id/imv3"
+        app:layout_constraintTop_toTopOf="@+id/imv3"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <TextView
+        android:id="@+id/tv3_total"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imv4"
+        app:layout_constraintEnd_toStartOf="@+id/btn3_plus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv3"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <Button
+        android:id="@+id/btn3_subtract"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape6"
+        android:gravity="center"
+        android:onClick="Down"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imv4"
+        app:layout_constraintEnd_toStartOf="@+id/tv3_total"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imv3"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <Button
+        android:id="@+id/btn3_plus"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape6"
+        android:gravity="center"
+        android:onClick="Up"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imv4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv3"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <Button
+        android:id="@+id/btn4_plus"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape6"
+        android:gravity="center"
+        android:onClick="Up"
+        android:text="+"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv4"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <Button
+        android:id="@+id/btn4_subtract"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_shape6"
+        android:gravity="center"
+        android:onClick="Down"
+        android:text="-"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv4_total"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imv4"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <ImageView
+        android:id="@+id/imv4"
+        android:layout_width="158dp"
+        android:layout_height="159dp"
+        android:background="@drawable/image_shape"
+        android:duplicateParentState="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toEndOf="@+id/imv2"
+        app:layout_constraintTop_toBottomOf="@+id/imv3"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/sandwich1" />
+
+    <TextView
+        android:id="@+id/tv4_name"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:alpha="0.8"
+        android:background="@drawable/text_shape"
+        android:text="歐風烤豬排三明治"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv4"
+        app:layout_constraintEnd_toEndOf="@+id/imv4"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/imv4"
+        app:layout_constraintTop_toTopOf="@+id/imv4"
+        app:layout_constraintVertical_bias="0.891" />
+
+    <TextView
+        android:id="@+id/tv4_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="$110"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imv4"
+        app:layout_constraintEnd_toEndOf="@+id/imv4"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="@+id/imv4"
+        app:layout_constraintTop_toTopOf="@+id/imv4"
+        app:layout_constraintVertical_bias="0.899" />
+
+    <TextView
+        android:id="@+id/tv4_total"
+        android:layout_width="59dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn4_plus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imv4"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape6"
+        android:onClick="Enter"
+        android:text="餐點確認"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4_subtract"
+        app:layout_constraintVertical_bias="0.539" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

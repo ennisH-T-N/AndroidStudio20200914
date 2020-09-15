@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mid_BMI</string>
+    <string name="weight">Weight:</string>
+    <string name="high">High:</string>
+    <string name="please_input_your_high">please input your high</string>
+    <string name="please_input_your_weight">please input your weight</string>
+    <string name="m_kg">M/KG</string>
+    <string name="cm_ib">CM/IB</string>
+    <string name="result">Result:</string>
+    <string name="enter">Enter</string>
+</resources>

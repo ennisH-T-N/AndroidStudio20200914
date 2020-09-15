@@ -1,0 +1,2 @@
+rootProject.name='MyImageView'
+include ':app'

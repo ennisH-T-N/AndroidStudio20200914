@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mid_BMI</string>
+    <string name="weight">體重:</string>
+    <string name="high">身高:</string>
+    <string name="please_input_your_high">請輸入身高</string>
+    <string name="please_input_your_weight">請輸入體重</string>
+    <string name="m_kg">公尺/公斤</string>
+    <string name="cm_ib">公分/磅</string>
+    <string name="result">結果:</string>
+    <string name="enter">送出</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main6Activity">
+
+    <TextView
+        android:id="@+id/tlte"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="TICKS"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/ticks"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/main"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ticks2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/main"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ticks3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/main"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ret"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button"
+        android:text="Return"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

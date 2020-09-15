@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/main_background" />
+
+    <ImageButton
+        android:id="@+id/imgbtn1"
+        android:layout_width="164dp"
+        android:layout_height="146dp"
+        android:background="@drawable/button_shape1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn2"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.302"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="94dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="我要點餐"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn1"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn1"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn1"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn1"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <ImageButton
+        android:id="@+id/imgbtn2"
+        android:layout_width="164dp"
+        android:layout_height="146dp"
+        android:background="@drawable/button_shape2"
+        app:layout_constraintBottom_toBottomOf="@+id/imv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.302"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="94dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="電話訂位"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn2"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn2"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn2"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn2"
+        app:layout_constraintVertical_bias="0.794" />
+
+    <ImageButton
+        android:id="@+id/imgbtn3"
+        android:layout_width="164dp"
+        android:layout_height="146dp"
+        android:background="@drawable/button_shape3"
+        app:layout_constraintBottom_toBottomOf="@+id/imv1"
+        app:layout_constraintEnd_toStartOf="@+id/imgbtn4"
+        app:layout_constraintHorizontal_bias="0.629"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.606"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="94dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="遊戲區"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn3"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn3"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn3"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn3"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <ImageButton
+        android:id="@+id/imgbtn4"
+        android:layout_width="164dp"
+        android:layout_height="146dp"
+        android:background="@drawable/button_shape4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imv1"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="94dp"
+        android:layout_height="29dp"
+        android:gravity="center"
+        android:text="餐廳位置"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn4"
+        app:layout_constraintEnd_toEndOf="@+id/imgbtn4"
+        app:layout_constraintStart_toStartOf="@+id/imgbtn4"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn4"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2BE1D0"
+        android:text="返回上頁"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="主選單"
+        android:textColor="#000000"
+        android:textSize="42sp"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imv1"
+        app:layout_constraintVertical_bias="0.096" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

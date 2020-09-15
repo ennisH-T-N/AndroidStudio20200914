@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Intent</string>
+    <string name="bmi">BMI</string>
+    <string name="high">High</string>
+    <string name="weight">Weight</string>
+    <string name="enter">ENTER</string>
+    <string name="result">Result:</string>
+</resources>
